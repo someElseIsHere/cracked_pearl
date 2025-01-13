@@ -25,4 +25,9 @@ public class BossEntity extends MobEntity implements GeoEntity {
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
     }
+
+    @Override
+    public boolean shouldRender(double distance) {
+        return true;
+    }
 }
