@@ -1,0 +1,41 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "TODO"
+
+[[mods]]
+modId = "cracked_pearl"
+version = "${version}"
+displayName = "Cracked Pearl"
+authors = "thePlaceholder"
+description = '''
+TODO
+'''
+logoFile = "assets/cracked_pearl/icon.png"
+
+[[dependencies.cracked_pearl]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cracked_pearl]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cracked_pearl]]
+modId = "geckolib"
+mandatory = true
+versionRange = "[4.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cracked_pearl]]
+modId = "aaa_particles"
+mandatory = true
+versionRange = "[1.20.1-1.4.10,)"
+ordering = "NONE"
+side = "BOTH"
