@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.theplaceholder.crackedpearl.entity.CrPeEntityTypes;
 import org.theplaceholder.crackedpearl.event.CrPeEventBus;
+import org.theplaceholder.crackedpearl.particle.CrPeParticleTypes;
 import org.theplaceholder.crackedpearl.sound.CrPeSoundEvents;
 
 @Mod(CrackedPearlMod.MOD_ID)
@@ -14,8 +15,11 @@ public final class CrackedPearlMod {
 
     public CrackedPearlMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         CrPeEntityTypes.register(eventBus);
         CrPeSoundEvents.register(eventBus);
+        CrPeParticleTypes.register(eventBus);
+
         CrPeEventBus.register(eventBus);
     }
 

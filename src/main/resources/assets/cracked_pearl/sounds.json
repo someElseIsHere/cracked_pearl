@@ -1,7 +1,7 @@
 {
-  "invoke": {
+  "laser0": {
     "sounds": [
-      "cracked_pearl:invoke"
+      "cracked_pearl:laser0"
     ]
   }
 }

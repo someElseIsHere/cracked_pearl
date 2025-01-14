@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"cracked_pearl.animation.boss.invoke": {
+		"cracked_pearl.animation.boss.laser0": {
 			"animation_length": 3.0417,
 			"bones": {
 				"Head": {
@@ -133,14 +133,21 @@
 						}
 					}
 				}
-			},
-			"sound_effects": {
-				"0.0": {
-					"effect": "cracked_pearl:invoke"
+			}
+		},
+		"cracked_pearl.animation.boss.idle": {
+			"loop": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": {
+						"vector": ["math.sin(query.time_stamp * 120) * 3", 0, "math.cos(query.time_stamp * 100) * 2"]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": ["math.cos(query.anim_time * 120) * 3", 0, "math.sin(query.anim_time * 100) * 2"]
+					}
 				}
-			},
-			"timeline": {
-				"0.58": "invoke"
 			}
 		}
 	},

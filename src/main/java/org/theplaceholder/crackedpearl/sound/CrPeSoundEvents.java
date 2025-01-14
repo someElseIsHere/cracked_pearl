@@ -10,7 +10,7 @@ import org.theplaceholder.crackedpearl.CrackedPearlMod;
 public class CrPeSoundEvents {
     private static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, CrackedPearlMod.MOD_ID);
 
-    public static final RegistryObject<SoundEvent> INVOKE = register("invoke");
+    public static final RegistryObject<SoundEvent> LASER0 = register("laser0");
 
     private static RegistryObject<SoundEvent> register(String id) {
         return SOUND_EVENTS.register(id, () -> SoundEvent.of(CrackedPearlMod.id(id)));
